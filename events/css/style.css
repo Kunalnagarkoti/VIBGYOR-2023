@@ -1,0 +1,1473 @@
+/* view port */
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 1vw;
+  overflow-x: hidden;
+}
+
+h1,h2,h4{
+  font-family: "Abril Fatface";
+}
+.container-cus{
+  /* width: 100vw !important; */
+}
+
+
+/* Grid Setting */
+.container-cus { 
+  display: flex;
+  flex-direction: column;
+    padding: 0;
+    margin: 0;
+    /* width: 100vw; */
+  }
+  
+  .header { }
+  
+  .date {  }
+  
+  .location {  }
+  
+  .highlights {  }
+  
+  .cultural {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  
+  .tech {  display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+  
+  /* Grid Setting Ends */
+
+/* Header */
+
+.header{
+  display: flex;
+  
+}
+.header-custom-imsec{
+  width: 35vw;
+  max-height: 10vh;
+  margin: 0 auto;
+  
+}
+
+
+/* Header ends */
+
+
+/* copyright */
+
+.copyright{
+  text-align: center;
+  background: #1193cb;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  max-height: 10vh;
+}
+/* copyright ends */
+
+/* register */
+
+.register{
+  display: flex;
+  justify-content: center;
+  background: #0c4aa7;
+
+}
+
+.register-inner{
+  text-align: center;
+  margin: auto;
+  max-width: 50%;
+}
+.register-inner h1,.register-inner h2{
+  font-family: "Abril Fatface";
+  font-style: italic;
+}
+.register-inner h1{
+  font-size: 8rem;
+  color: #f1c50e;
+}
+.register-inner h2,a{
+  text-decoration: none;
+  color: #b9c1cc;
+  font-size: 6rem;
+}
+
+/* glow effect */
+.glow {
+  font-size: 70px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #eeeeee, 0 0 15px #292D33, 0 0 20px #292D33, 0 0 25px #292D33, 
+                 0 0 10px #9554b3, 0 0 15px #9554b3, 0 0 20px #9554b3;
+  }
+  to {
+    text-shadow: 0 0 15px #eeeeee, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6,
+                 0 0 10px #ff4da6, 0 0 15px #ff4da6, 0 0 20px #ff4da6;
+  }
+}
+
+/* glow effect ends */
+
+/* hover effect put */
+
+.register-inner p{
+  text-align: justify;
+  padding: 10px 0;
+  color: #fff;
+}
+/* register ends */
+
+/* desc start */
+
+.desc .row._1{
+  height: 70vh;
+}
+.desc-content {
+  text-align: center;
+  background-color: #88B0D7;
+  padding: 10px;
+
+}
+
+.desc-content h4{
+  color: #72683f;
+  word-break: none;
+  font-size: 4rem;
+}
+.desc-content p{
+  text-align: justify;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+.bg01{
+  background-image: url("../assets/background/5_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bg02{
+  background-image: url("../assets/background/VIBGYOR3.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 50%;
+
+}
+.bg05{
+  background-image: url("../assets/background/VIBGYOR6.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 50%;
+  background-position: -86px -174px;
+
+}
+
+.desc .row._2{
+  height: 60vh;
+}
+
+.bg03{
+  background-image: url("../assets/background/vibgyor1.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+.bg04{
+  background-image: url("../assets/background/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+
+}
+
+/* desc ends */
+
+/* highlight */
+.highlights{
+  background-color: #20c5d1;
+  max-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center ;
+}
+
+.highlights h1{
+  font-size: 6rem;
+  color: #f1c50e;
+  text-align: center;
+  font-style: italic;
+}
+
+.highlights p{
+  text-align: center;
+  max-width: 50%;
+  color: #fff;
+  font-size: 20px;
+}
+/* highlights ends */
+
+
+/* events */
+.events{
+  background-color: #292d33;
+  color: #fff;
+
+}
+
+.events h1{
+  font-size: 9rem;
+  font-style: italic;
+  text-align: center;
+}
+.events .content_container h5{
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: left;
+  width: 100%;
+  font-weight: 600;
+   
+}
+
+.events .box{
+  display: flex;
+  padding: 10px;
+}
+.events .box .img_container{
+  max-width: 250px;
+padding: 10px;
+  /* height: 100%; */
+}
+.events .box .img_container img{
+  width: 100%;
+  height: 100%;
+}
+
+.events .content_container{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.events .button_container button,.events .button_container a{
+font-size: 1.5rem;
+margin: 10px;
+background-color: #478ac9 !important;
+color: #fff;
+font-weight: 500;
+}
+
+.events .button_container a{
+font-weight: 600;
+}
+
+.event_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 80%;
+  margin: auto;
+  
+}
+
+.box .button_container{
+  display: flex;
+
+}
+
+/* events Ends */
+/* view port */
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 1rem;
+}
+
+h1,h2,h4{
+  font-family: "Abril Fatface";
+}
+.container-cus{
+  /* width: 100vw !important; */
+}
+
+
+/* Grid Setting */
+.container-cus { 
+  display: flex;
+  flex-direction: column;
+    padding: 0;
+    margin: 0;
+    /* width: 100vw; */
+  }
+  
+  .header { }
+  
+  .date {  }
+  
+  .location {  }
+  
+  .highlights {  }
+  
+  .cultural {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  
+  .tech {  display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+  
+  /* Grid Setting Ends */
+
+/* Header */
+
+.header{
+  display: flex;
+  
+}
+.header-custom-imsec{
+  width: 35vw;
+  max-height: 10vh;
+  margin: 0 auto;
+  
+}
+
+
+/* Header ends */
+
+
+/* copyright */
+
+.copyright{
+  text-align: center;
+  background: #333333;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  max-height: 10vh;
+}
+/* copyright ends */
+
+/* register */
+
+.register{
+  display: flex;
+  justify-content: center;
+  background: #292D33;
+
+}
+
+.register-inner{
+  text-align: center;
+  margin: auto;
+  max-width: 50%;
+}
+.register-inner h1,.register-inner h2{
+  font-family: "Abril Fatface";
+  font-style: italic;
+}
+.register-inner h1{
+  font-size: 8rem;
+  color: #f1c50e;
+}
+.register-inner h2,a{
+  text-decoration: none;
+  color: #b9c1cc;
+  font-size: 6rem;
+}
+
+/* hover effect put */
+
+.register-inner p{
+  text-align: justify;
+  padding: 10px 0;
+  color: #fff;
+}
+/* register ends */
+
+/* desc start */
+
+.desc .row._1{
+  height: 70vh;
+}
+.desc-content {
+  text-align: center;
+  background-color: #88B0D7;
+  padding: 10px;
+
+}
+
+.desc-content h4{
+  color: #72683f;
+  word-break: none;
+  font-size: 4rem;
+}
+.desc-content p{
+  text-align: justify;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+.bg01{
+  background-image: url("../assets/background/5_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bg02{
+  background-image: url("../assets/background/VIBGYOR3.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 50%;
+
+}
+.bg05{
+  background-image: url("../assets/background/VIBGYOR6.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 50%;
+  background-position: -86px -174px;
+
+}
+
+.desc .row._2{
+  height: 60vh;
+}
+
+.bg03{
+  background-image: url("../assets/background/vibgyor1.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+.bg04{
+  background-image: url("../assets/background/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+
+}
+
+/* desc ends */
+
+/* highlight */
+.highlights{
+  background-color: #666666;
+  max-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center ;
+}
+
+.highlights h1{
+  font-size: 6rem;
+  color: #f1c50e;
+  text-align: center;
+  font-style: italic;
+}
+
+.highlights p{
+  text-align: center;
+  max-width: 50%;
+  color: #fff;
+  font-size: 20px;
+}
+/* highlights ends */
+
+
+/* events */
+.events{
+  background-color: #292d33;
+  color: #fff;
+
+}
+
+.events h1{
+  font-size: 9rem;
+  font-style: italic;
+  text-align: center;
+}
+.events .content_container h5{
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: left;
+  width: 100%;
+  font-weight: 600;
+   
+}
+
+.events .box{
+  display: flex;
+  padding: 10px;
+}
+.events .box .img_container{
+  max-width: 250px;
+padding: 10px;
+  /* height: 100%; */
+}
+.events .box .img_container img{
+  width: 100%;
+  height: 100%;
+}
+
+.events .content_container{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.events .button_container button,.events .button_container a{
+font-size: 1.5rem;
+margin: 10px;
+background-color: #478ac9 !important;
+color: #fff;
+font-weight: 500;
+}
+
+.events .button_container a{
+font-weight: 600;
+}
+
+.event_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 80%;
+  margin: auto;
+  
+}
+
+.box .button_container{
+  display: flex;
+
+}
+
+/* events Ends */
+/* view port */
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 1rem;
+}
+
+h1,h2,h4{
+  font-family: "Abril Fatface";
+}
+.container-cus{
+  /* width: 100vw !important; */
+}
+
+
+/* Grid Setting */
+.container-cus { 
+  display: flex;
+  flex-direction: column;
+    padding: 0;
+    margin: 0;
+    /* width: 100vw; */
+  }
+  
+  .header { }
+  
+  .date {  }
+  
+  .location {  }
+  
+  .highlights {  }
+  
+  .cultural {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  
+  .tech {  display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+  
+  /* Grid Setting Ends */
+
+/* Header */
+
+.header{
+  display: flex;
+  
+}
+.header-custom-imsec{
+  width: 35vw;
+  max-height: 10vh;
+  margin: 0 auto;
+  
+}
+
+
+/* Header ends */
+
+
+/* copyright */
+
+.copyright{
+  text-align: center;
+  background: #333333;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  max-height: 10vh;
+}
+/* copyright ends */
+
+/* register */
+
+.register{
+  display: flex;
+  justify-content: center;
+  background: #292D33;
+
+}
+
+.register-inner{
+  text-align: center;
+  margin: auto;
+  max-width: 50%;
+}
+.register-inner h1,.register-inner h2{
+  font-family: "Abril Fatface";
+  font-style: italic;
+}
+.register-inner h1{
+  font-size: 8rem;
+  color: #f1c50e;
+}
+.register-inner h2,a{
+  text-decoration: none;
+  color: #b9c1cc;
+  font-size: 6rem;
+}
+
+/* hover effect put */
+
+.register-inner p{
+  text-align: justify;
+  padding: 10px 0;
+  color: #fff;
+}
+/* register ends */
+
+/* desc start */
+
+.desc .row._1{
+  height: 70vh;
+}
+.desc-content {
+  text-align: center;
+  background-color: #88B0D7;
+  padding: 10px;
+
+}
+
+.desc-content h4{
+  color: #72683f;
+  word-break: none;
+  font-size: 4rem;
+}
+.desc-content p{
+  text-align: justify;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+.bg01{
+  background-image: url("../assets/background/5_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bg02{
+  background-image: url("../assets/background/VIBGYOR3.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 50%;
+
+}
+.bg05{
+  background-image: url("../assets/background/VIBGYOR6.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 50%;
+  background-position: -86px -174px;
+
+}
+
+.desc .row._2{
+  height: 60vh;
+}
+
+.bg03{
+  background-image: url("../assets/background/vibgyor1.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+.bg04{
+  background-image: url("../assets/background/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+
+}
+
+/* desc ends */
+
+/* highlight */
+.highlights{
+  background-color: #666666;
+  max-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center ;
+}
+
+.highlights h1{
+  font-size: 6rem;
+  color: #f1c50e;
+  text-align: center;
+  font-style: italic;
+}
+
+.highlights p{
+  text-align: center;
+  max-width: 50%;
+  color: #fff;
+  font-size: 20px;
+}
+/* highlights ends */
+
+
+/* events */
+.events{
+  background-color: #292d33;
+  color: #fff;
+
+}
+
+.events h1{
+  font-size: 9rem;
+  font-style: italic;
+  text-align: center;
+}
+.events .content_container h5{
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: left;
+  width: 100%;
+  font-weight: 600;
+   
+}
+
+.events .box{
+  display: flex;
+  padding: 10px;
+}
+.events .box .img_container{
+  max-width: 250px;
+padding: 10px;
+  /* height: 100%; */
+}
+.events .box .img_container img{
+  width: 100%;
+  height: 100%;
+}
+
+.events .content_container{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.events .button_container button,.events .button_container a{
+font-size: 1.5rem;
+margin: 10px;
+background-color: #478ac9 !important;
+color: #fff;
+font-weight: 500;
+}
+
+.events .button_container a{
+font-weight: 600;
+}
+
+.event_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 80%;
+  margin: auto;
+  
+}
+
+.box .button_container{
+  display: flex;
+
+}
+
+/* events Ends */
+/* view port */
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 1rem;
+}
+
+h1,h2,h4{
+  font-family: "Abril Fatface";
+}
+.container-cus{
+  /* width: 100vw !important; */
+}
+
+
+/* Grid Setting */
+.container-cus { 
+  display: flex;
+  flex-direction: column;
+    padding: 0;
+    margin: 0;
+    /* width: 100vw; */
+  }
+  
+  .header { }
+  
+  .date {  }
+  
+  .location {  }
+  
+  .highlights {  }
+  
+  .cultural {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  
+  .tech {  display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+  
+  /* Grid Setting Ends */
+
+/* Header */
+
+.header{
+  display: flex;
+  
+}
+.header-custom-imsec{
+  width: 35vw;
+  max-height: 10vh;
+  margin: 0 auto;
+  
+}
+
+
+/* Header ends */
+
+
+/* copyright */
+
+.copyright{
+  text-align: center;
+  background: #333333;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  max-height: 10vh;
+}
+/* copyright ends */
+
+/* register */
+
+.register{
+  display: flex;
+  justify-content: center;
+  background: #292D33;
+
+}
+
+.register-inner{
+  text-align: center;
+  margin: auto;
+  max-width: 50%;
+}
+.register-inner h1,.register-inner h2{
+  font-family: "Abril Fatface";
+  font-style: italic;
+}
+.register-inner h1{
+  font-size: 8rem;
+  color: #f1c50e;
+}
+.register-inner h2,a{
+  text-decoration: none;
+  color: #b9c1cc;
+  font-size: 6rem;
+}
+
+/* hover effect put */
+
+.register-inner p{
+  text-align: justify;
+  padding: 10px 0;
+  color: #fff;
+}
+/* register ends */
+
+/* desc start */
+
+.desc .row._1{
+  height: 70vh;
+}
+.desc-content {
+  text-align: center;
+  background-color: #88B0D7;
+  padding: 10px;
+
+}
+
+.desc-content h4{
+  color: #72683f;
+  word-break: none;
+  font-size: 4rem;
+}
+.desc-content p{
+  text-align: justify;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+.bg01{
+  background-image: url("../assets/background/5_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+
+}
+.bg02{
+  background-image: url("../assets/background/VIBGYOR3.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 50%;
+
+
+}
+.bg05{
+  background-image: url("../assets/background/VIBGYOR6.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 50%;
+  background-position: -86px -174px;
+
+
+}
+
+.desc .row._2{
+  height: 60vh;
+}
+
+.bg03{
+  background-image: url("../assets/background/vibgyor1.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+
+}
+.bg04{
+  background-image: url("../assets/background/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+
+
+
+
+}
+
+.desc .row{
+  max-width: 100vw;
+}
+
+/* desc ends */
+
+/* highlight */
+.highlights{
+  background-color: #666666;
+  max-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center ;
+}
+
+.highlights h1{
+  font-size: 6rem;
+  color: #f1c50e;
+  text-align: center;
+  font-style: italic;
+}
+
+.highlights p{
+  text-align: center;
+  max-width: 50%;
+  color: #fff;
+  font-size: 20px;
+}
+/* highlights ends */
+
+
+/* events */
+.events{
+  background-color: #292d33;
+  color: #fff;
+
+}
+
+.events h1{
+  font-size: 9rem;
+  font-style: italic;
+  text-align: center;
+}
+.events .content_container h5{
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: left;
+  width: 100%;
+  font-weight: 600;
+   
+}
+
+.events .box{
+  display: flex;
+  padding: 10px;
+}
+.events .box .img_container{
+  max-width: 250px;
+padding: 10px;
+  /* height: 100%; */
+}
+.events .box .img_container img{
+  width: 100%;
+  height: 100%;
+}
+
+.events .content_container{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.events .button_container button,.events .button_container a{
+font-size: 1.5rem;
+margin: 10px;
+background-color: #478ac9 !important;
+color: #fff;
+font-weight: 500;
+}
+
+.events .button_container a{
+font-weight: 600;
+}
+
+.event_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 80%;
+  margin: auto;
+  
+}
+
+.box .button_container{
+  display: flex;
+
+}
+
+/* events Ends */
+
+/* location */
+
+.location{
+  color: #fff;
+  background-image: url("https://res.cloudinary.com/personal-cloud-rohaanmd/image/upload/v1680367284/IMG2_1473_feywua.jpg"); 
+  background-repeat: no-repeat;
+  background-color: #333333;
+  background-size: cover;
+  background-position: 100% 100%;
+
+  height: 75vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.location .row-1{
+  text-align: left;
+  font-size: 3rem;
+  position: absolute;
+top: 0;
+left: 0;
+font-weight: 600;
+
+}
+
+.location .row-2{
+text-align: center;
+font-family: "Abril Fatface";
+font-size: 8rem;
+font-style: italic;
+white-space: nowrap;
+padding: 7px;
+}
+
+.location .row-3{
+text-align: right;
+font-size: 3rem;
+position: absolute;
+right: 0;
+bottom: 0;
+font-weight: 600;
+}
+
+.location .row-4{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.location .row-5{
+  text-align: center;
+  font-family: "Abril Fatface";
+  font-size: 7rem;
+  font-style: italic;
+  
+}
+
+.in-box-1{
+position: relative;
+}
+
+.location .box{
+  max-width: 80%;
+  margin: auto;
+}
+
+/* location ends*/
+
+
+/* Date */
+.date{
+
+  background-image: url("../assets/background/148-gaba.jpg");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size: 100%;
+  height: 90vh;
+  color: #fff;
+}
+
+.date .date-box{
+  position: relative;
+max-width: 70%;
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.date .date-box .row-1{
+  text-align: left;
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.date .date-box .row-2{
+  font-family: "Abril Fatface";
+  font-size: 16rem;
+  font-style: italic;
+  position: relative;
+  z-index: 2;
+display: flex;
+
+}
+
+.date .date-box .row-3{  
+  text-align: center;
+  font-size: 3rem;
+  position: absolute;
+  bottom: -5rem;
+  right: -8rem;
+  background-color: #478ac9;
+  border-radius: 50%;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Date Ends */
+
+/* Modal styling */
+
+.modal_cus_title{
+  font-size: 2rem;
+  color: #f1c50e;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.modal_cus_btn{
+  font-size: 1.5rem;
+margin: 10px;
+background-color: #f1c50e !important;
+color: #fff;
+font-weight: 500;
+margin: auto;
+}
+
+.modal_cus_list{
+  font-size: 1.5rem;
+}
+
+/* Modal styling ends */
+
+/* Media Queries */
+
+@media screen and (max-width: 1080px){
+  .date {
+    height: 70vh;
+}  
+
+}
+
+
+@media screen and (max-width: 768px){
+  .date {
+    height: 59vh;
+}  
+
+}
+
+
+@media screen and (max-width: 425px){
+  html{
+    font-size: 2vw;
+  }
+  .date {
+    height: 100vh;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}  
+.date .date-box .row-2 {
+  font-size: 10rem;
+}
+.date .date-box .row-1 {
+
+  font-size: 2.7rem;
+  top: 0;
+  left: -3rem;
+}
+.date .date-box .row-3 {
+  font-size: 4rem;
+  bottom: -37rem;
+  right: -6rem;
+  height: 20rem;
+  width: 20rem;
+}
+
+.location{
+  background-position: 71% 100%;
+  height: 100vh;
+
+}
+
+.location .row-1 {
+  text-align: left;
+  font-size: 6rem;
+  position: absolute;
+  top: -15rem;
+  left: 0;
+  font-weight: 600;
+}
+
+.location .row-2 {
+
+  font-size: 8rem;
+  font-style: italic;
+  white-space: break-spaces;
+  padding: 7px;
+}
+
+.location .row-3 {
+  text-align: right;
+  font-size: 6rem;
+  position: absolute;
+  right: 0;
+  bottom: -10rem;
+  font-weight: 600;
+}
+
+.location .row-4 {
+margin-top: 25rem;
+}
+.highlights h1 {
+
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.highlights p {
+  max-width: 100%;
+  font-size: 1.5rem;
+}
+.events h1 {
+  font-size: 6rem;
+
+}
+.event_grid {
+  grid-template-columns: 1fr;
+  max-width: 100%;
+}
+.events .box {
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.events .box .img_container {
+  max-width: none;
+  padding: 2rem 9rem;
+
+}
+
+.events .content_container h5 {
+  font-size: 3.5rem;
+text-align: center;
+}
+
+.events .button_container button, .events .button_container a {
+  font-size: 2.5rem;
+  margin: 2rem;
+
+}
+
+.bg01,.bg05,.bg02, ._2x {
+display: none;
+}
+
+.desc-content p {
+  font-size: 1.95rem;
+}
+
+.register-inner {
+  text-align: center;
+  margin: auto;
+  max-width: 100%;
+  padding: 1.5rem;
+}
+
+.register-inner p{
+  font-size: 2rem;
+}
+
+.copyright{
+  font-size: 2rem;
+}
+.header-custom-imsec {
+  width: 90vw;
+  max-height: 22vh;
+}
+
+/* Modal styling */
+
+.modal_cus_title{
+  font-size: 4rem;
+
+}
+
+.modal_cus_btn{
+  font-size: 2rem;
+}
+
+.modal_cus_list{
+  font-size: 2rem;
+}
+
+.cus-modal{
+
+  margin: 1rem;
+}
+
+/* Modal styling ends */
+
+}

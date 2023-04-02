@@ -1,5 +1,5 @@
 $('.countdown-timer').countdown({
-    date: "April 7, 2023 10:00:00",
+    date: "April 13, 2023 10:00:00",
 
     render: function(data) {
         $(".days .value").html(this.leadingZeros(data.days, 2));
